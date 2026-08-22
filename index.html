@@ -7,7 +7,6 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            /* Cool realistic dark gradient background with a subtle ambient glow */
             background: linear-gradient(135deg, #09090e 0%, #12121a 50%, #0d0e15 100%);
             background-attachment: fixed;
             color: #ffffff;
@@ -32,27 +31,28 @@
             text-shadow: 0 0 20px rgba(255, 59, 59, 0.4);
         }
         .container {
-            padding: 15px;
-            max-width: 900px;
+            padding: 10px;
+            width: 100%;
+            box-sizing: border-box;
             margin: 0 auto;
         }
         p {
             color: #9aa0a6;
+            padding: 0 5px;
         }
         .stream-card {
-            margin-bottom: 30px;
-            /* Glassmorphism card effect */
+            margin-bottom: 20px;
             background: rgba(20, 20, 28, 0.75);
             backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 15px;
-            border-radius: 16px;
+            padding: 10px;
+            border-radius: 12px;
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
         }
         .stream-card h3 {
-            margin-top: 0;
+            margin: 0 0 10px 0;
             color: #fff;
-            font-size: 18px;
+            font-size: 16px;
         }
         .video-container {
             position: relative;
@@ -60,9 +60,8 @@
             padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
             height: 0;
             background: #000;
-            border-radius: 10px;
+            border-radius: 8px;
             overflow: hidden;
-            margin-top: 10px;
             box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
         }
         .video-container iframe {
@@ -73,7 +72,6 @@
             height: 100%;
             border: none;
         }
-        /* Bottom Navigation Bar */
         .bottom-nav {
             position: fixed;
             bottom: 0;
@@ -109,17 +107,41 @@
     </header>
 
     <div class="container">
-        <p>Scroll down to watch all your live streams below.</p>
+        <p>Watch your live streams below:</p>
 
-        <!-- Stream 1: Brentford vs Tottenham -->
+        <!-- Stream 1: Bayern Munich -->
         <div class="stream-card">
-            <h3>⚽ Brentford vs Tottenham Hotspur</h3>
+            <h3>⚽ Bayern Munich (English Stream)</h3>
             <div class="video-container">
-                <iframe title="Brentford vs Tottenham Hotspur Player" src="https://embed.st/embed/admin/ppv-brentford-vs-tottenham-hotspur/5" allowfullscreen allow="encrypted-media; picture-in-picture"></iframe>
+                <iframe src="YOUR_BAYERN_EMBED_URL_HERE" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture"></iframe>
             </div>
         </div>
 
-        <!-- Stream 2: Telemundo USA -->
+        <!-- Stream 2: ABC USA -->
+        <div class="stream-card">
+            <h3>📺 ABC USA Live</h3>
+            <div class="video-container">
+                <iframe src="https://cdx-08192.website/embed/abc-usa" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Stream 3: beIN Sports 1 (Arabic) -->
+        <div class="stream-card">
+            <h3>⚽ beIN Sports 1 (Arabic)</h3>
+            <div class="video-container">
+                <iframe src="https://cdx-08192.website/play/beinsports1-sa" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Stream 4: DAZN LaLiga (Spanish) -->
+        <div class="stream-card">
+            <h3>⚽ DAZN LaLiga (Spanish)</h3>
+            <div class="video-container">
+                <iframe src="https://cdx-08192.website/play/daznlaliga-es" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Stream 5: Telemundo USA -->
         <div class="stream-card">
             <h3>📺 Telemundo USA Live</h3>
             <div class="video-container">
@@ -129,7 +151,6 @@
 
     </div>
 
-    <!-- Bottom Navigation Bar -->
     <div class="bottom-nav">
         <a class="nav-item active">
             <div>🏠</div>

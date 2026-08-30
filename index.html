@@ -84,7 +84,27 @@
 
     <h1>WayneTV</h1>
 
-    <!-- 1. Chelsea vs Brighton (Multi-Stream Switcher) -->
+    <!-- 1. Real Madrid vs Malaga (Multi-Stream Switcher) -->
+    <div class="stream-card">
+        <div class="card-header">
+            <h3>Real Madrid vs Malaga</h3>
+            <span class="badge-live">LIVE</span>
+        </div>
+        
+        <div class="language-bar">
+            <select class="language-select" onchange="changeLanguage(this, 'madrid-stream')">
+                <option value="https://epiembeds.online/embed/movistarlaliga-es">Laliga Tv</option>
+                <option value="https://epiembeds.online/embed/beinsports2-sa">Arabic</option>
+                <option value="https://dlstreams.st/cast/stream-84.php">M+ laliga</option>
+            </select>
+        </div>
+
+        <div class="video-container">
+            <iframe id="madrid-stream" src="https://epiembeds.online/embed/movistarlaliga-es" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- 2. Chelsea vs Brighton (Multi-Stream Switcher) -->
     <div class="stream-card">
         <div class="card-header">
             <h3>Chelsea vs Brighton</h3>
@@ -103,7 +123,7 @@
         </div>
     </div>
 
-    <!-- 2. Tottenham Match -->
+    <!-- 3. Tottenham Match -->
     <div class="stream-card">
         <div class="card-header">
             <h3>Tottenham Match</h3>

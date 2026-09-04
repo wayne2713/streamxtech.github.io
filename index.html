@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,32 +85,29 @@
 
     <h1>WayneTV</h1>
 
-    <!-- 1. Manchester United vs Ipswich Town -->
+    <!-- 1. Liverpool vs Ipswich (Formerly Chelsea vs Brighton) -->
     <div class="stream-card">
         <div class="card-header">
-            <h3>Manchester United vs Ipswich Town</h3>
+            <h3>Liverpool vs Ipswich</h3>
             <span class="badge-live">LIVE</span>
         </div>
+        
+        <div class="language-bar">
+            <select class="language-select" onchange="changeLanguage(this, 'liverpool-stream')">
+                <option value="https://epiembeds.online/embed/skysportsmainevent-uk">Sky Sport Main event</option>
+                <option value="https://dlstreams.st/plus/stream-38.php">Sky sports (2)</option>
+            </select>
+        </div>
+
         <div class="video-container">
-            <iframe title="Manchester United vs Ipswich Town Player" marginheight="0" marginwidth="0" src="https://embed.st/embed/admin/ppv-manchester-united-vs-ipswich-town/1" scrolling="no" allowfullscreen="yes" allow="encrypted-media; picture-in-picture;" width="100%" height="100%" frameborder="0"></iframe>
+            <iframe id="liverpool-stream" src="https://epiembeds.online/embed/skysportsmainevent-uk" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
         </div>
     </div>
 
-    <!-- 2. Manchester City -->
+    <!-- 2. Real Madrid vs Real Betis -->
     <div class="stream-card">
         <div class="card-header">
-            <h3>Manchester City</h3>
-            <span class="badge-live">LIVE</span>
-        </div>
-        <div class="video-container">
-            <iframe src="https://epiembeds.online/embed/skysportspremierleague-uk" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <!-- 3. Real Madrid vs Malaga (Multi-Stream Switcher) -->
-    <div class="stream-card">
-        <div class="card-header">
-            <h3>Real Madrid vs Malaga</h3>
+            <h3>Real Madrid vs Real Betis</h3>
             <span class="badge-live">LIVE</span>
         </div>
         
@@ -127,26 +125,18 @@
         </div>
     </div>
 
-    <!-- 4. Chelsea vs Brighton (Multi-Stream Switcher) -->
+    <!-- 3. Sky Premier League -->
     <div class="stream-card">
         <div class="card-header">
-            <h3>Chelsea vs Brighton</h3>
+            <h3>Sky Premier League</h3>
             <span class="badge-live">LIVE</span>
         </div>
-        
-        <div class="language-bar">
-            <select class="language-select" onchange="changeLanguage(this, 'chelsea-stream')">
-                <option value="https://epiembeds.online/embed/skysportsmainevent-uk">Sky Sport Main event</option>
-                <option value="https://dlstreams.st/plus/stream-38.php">Sky sports (2)</option>
-            </select>
-        </div>
-
         <div class="video-container">
-            <iframe id="chelsea-stream" src="https://epiembeds.online/embed/skysportsmainevent-uk" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://epiembeds.online/embed/skysportspremierleague-uk" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
         </div>
     </div>
 
-    <!-- 5. Tottenham Match -->
+    <!-- 4. Tottenham Match -->
     <div class="stream-card">
         <div class="card-header">
             <h3>Tottenham Match</h3>

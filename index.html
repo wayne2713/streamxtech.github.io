@@ -86,19 +86,11 @@
 
     <div class="stream-card">
         <div class="card-header">
-            <h3>CazéTV Live</h3>
+            <h3>LaLiga TV</h3>
             <span class="badge-live">LIVE</span>
         </div>
-        
-        <div class="language-bar">
-            <select class="language-select" onchange="changeLanguage(this, 'caze-stream')">
-                <option value="https://www.youtube.com/embed/live_stream?channel=UCZiYbVptd3PVPf4f6eR6UaQ">Official YouTube (VPN Required)</option>
-                <option value="https://epiembeds.online/embed/cazetv-br">Web Stream Backup</option>
-            </select>
-        </div>
-
         <div class="video-container">
-            <iframe id="caze-stream" src="https://www.youtube.com/embed/live_stream?channel=UCZiYbVptd3PVPf4f6eR6UaQ" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://dlive.sx/watch/stream-84.php" width="100%" height="100%" style="border:0;" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -110,63 +102,3 @@
         
         <div class="language-bar">
             <select class="language-select" onchange="changeLanguage(this, 'liverpool-stream')">
-                <option value="https://epiembeds.online/embed/skysportsmainevent-uk">Sky Sport Main event</option>
-                <option value="https://dlstreams.st/plus/stream-38.php">Sky sports (2)</option>
-            </select>
-        </div>
-
-        <div class="video-container">
-            <iframe id="liverpool-stream" src="https://epiembeds.online/embed/skysportsmainevent-uk" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="stream-card">
-        <div class="card-header">
-            <h3>Real Madrid vs Real Betis</h3>
-            <span class="badge-live">LIVE</span>
-        </div>
-        
-        <div class="language-bar">
-            <select class="language-select" onchange="changeLanguage(this, 'madrid-stream')">
-                <option value="https://epiembeds.online/embed/movistarlaliga-es">Laliga Tv</option>
-                <option value="https://epiembeds.online/embed/beinsports2-sa">Arabic</option>
-                <option value="https://dlive.sx/stream/stream-84.php">M+ laliga</option>
-                <option value="https://epiembeds.online/embed/premiersports1-ie">English (Premier Sports 1)</option>
-            </select>
-        </div>
-
-        <div class="video-container">
-            <iframe id="madrid-stream" src="https://epiembeds.online/embed/movistarlaliga-es" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="stream-card">
-        <div class="card-header">
-            <h3>Sky Premier League</h3>
-            <span class="badge-live">LIVE</span>
-        </div>
-        <div class="video-container">
-            <iframe src="https://epiembeds.online/embed/skysportspremierleague-uk" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <div class="stream-card">
-        <div class="card-header">
-            <h3>Tottenham Match</h3>
-            <span class="badge-live">LIVE</span>
-        </div>
-        <div class="video-container">
-            <iframe src="https://dlstreams.st/plus/stream-53.php" width="100%" height="100%" style="border:0;" allowfullscreen></iframe>
-        </div>
-    </div>
-
-    <script>
-        function changeLanguage(selectElement, iframeId) {
-            const selectedUrl = selectElement.value;
-            const iframe = document.getElementById(iframeId);
-            iframe.src = selectedUrl;
-        }
-    </script>
-
-</body>
-</html>
